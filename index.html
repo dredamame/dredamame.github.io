@@ -20,29 +20,49 @@
     <div class="max-w-3xl mx-auto w-full space-y-8">
         
         <!-- 頂部自我介紹區 -->
-        <header class="text-center space-y-4 bg-slate-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-lg border border-slate-700">
-            <!-- 臉書大頭照區塊 (請上傳 avatar.png 至同個 GitHub Repo 即可直接顯示) -->
-            <div class="flex justify-center">
-                <img src="avatar.png" alt="Dr. Edamame 大頭照" class="w-24 h-24 rounded-full object-cover border-4 border-emerald-500/30 shadow-md bg-slate-700">
+        <header class="bg-slate-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-lg border border-slate-700 space-y-6">
+            <!-- 臉書大頭照與標題區 -->
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <img src="avatar.png" alt="Dr. Edamame 大頭照" class="w-24 h-24 rounded-full object-cover border-4 border-emerald-500/30 shadow-md bg-slate-700 flex-shrink-0">
+                <div class="space-y-2 text-center sm:text-left">
+                    <div class="inline-block bg-emerald-950 text-emerald-400 border border-emerald-800/50 text-xs font-semibold px-3 py-1 rounded-full">
+                        Dr. Edamame's Medical Applets
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-bold text-slate-100 tracking-tight">
+                        毛豆小醫師的醫學小軟體
+                    </h1>
+                </div>
             </div>
 
-            <div class="space-y-2">
-                <div class="inline-block bg-emerald-950 text-emerald-400 border border-emerald-800/50 text-xs font-semibold px-3 py-1 rounded-full">
-                    Dr. Edamame's Medical Applets
-                </div>
-                <h1 class="text-2xl sm:text-3xl font-bold text-slate-100 tracking-tight">
-                    毛豆小醫師的醫學小軟體
-                </h1>
-                <p class="text-slate-400 max-w-lg mx-auto text-sm sm:text-base leading-relaxed">
-                    A edamame-loving primary care physician using vibe coding to build medical applets. 愛吃毛豆的基層小醫師，使用 vibe coding 開發醫學小軟體。
-                </p>
+            <!-- 自我介紹：靠左分段 -->
+            <div class="text-left text-slate-400 text-sm sm:text-base leading-relaxed space-y-2 pt-2 border-t border-slate-700/60">
+                <p>An edamame-loving primary care physician using vibe coding to build medical applets.</p>
+                <p>愛吃毛豆的基層小醫師，使用 vibe coding 開發醫學小軟體。</p>
             </div>
         </header>
 
         <!-- 工具清單區塊 -->
         <main class="grid gap-4 sm:grid-cols-2">
 
-            <!-- 卡片 1：S2S Generator -->
+            <!-- 卡片 1：LipiRisC (第一個作品) -->
+            <div class="bg-slate-800/80 hover:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700/80 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-medium text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-900/50">Endocrinology / Risk</span>
+                        <span class="text-xs text-slate-500">Web App</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-100 mb-2">LipiRisC</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        基於 2026 年 9 月 1 日健保新修的降血脂藥物使用規範，協助在診間快速進行血脂風險對照與決策支援。
+                    </p>
+                </div>
+                <a href="https://lipirisc.ai.studio/" target="_blank" class="inline-flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-semibold text-sm py-2.5 px-4 rounded-xl transition-colors shadow-sm">
+                    立即使用 
+                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- 卡片 2：S2S Generator (第二個作品) -->
             <div class="bg-slate-800/80 hover:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700/80 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
@@ -51,28 +71,10 @@
                     </div>
                     <h2 class="text-lg font-bold text-slate-100 mb-2">S2S Generator</h2>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        透過直覺的 checklist 勾選介面，將病患症狀一鍵複製到醫令軟體 Subjective 欄位，擺脫手動修改模版的繁瑣。
+                        透過 checklist 勾選介面，將病患症狀一鍵複製到醫令軟體 Subjective 欄位，擺脫手動修改模版的繁瑣。
                     </p>
                 </div>
                 <a href="https://dredamame.github.io/s2sg/" target="_blank" class="inline-flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-semibold text-sm py-2.5 px-4 rounded-xl transition-colors shadow-sm">
-                    立即使用 
-                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </a>
-            </div>
-
-            <!-- 卡片 2：LipiRisC -->
-            <div class="bg-slate-800/80 hover:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700/80 hover:border-blue-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <span class="text-xs font-medium text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded-md border border-blue-900/50">Endocrinology / Risk</span>
-                        <span class="text-xs text-slate-500">Web App</span>
-                    </div>
-                    <h2 class="text-lg font-bold text-slate-100 mb-2">LipiRisC</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        基於 2026 年 9 月 1 日健保新修的降血脂藥物使用規範，協助在診間快速進行血脂風險對照與決策支援。
-                    </p>
-                </div>
-                <a href="https://lipirisc.ai.studio/" target="_blank" class="inline-flex items-center justify-center w-full bg-slate-700 hover:bg-slate-600 text-slate-100 font-medium text-sm py-2.5 px-4 rounded-xl transition-colors shadow-sm">
                     立即使用 
                     <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
