@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Edamame 的診間小工具箱</title>
+    <!-- 引入 Tailwind CSS CDN 以維持輕量與高效 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f0fdf4; /* 極淡的清爽綠色背景 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-700 flex flex-col justify-between py-10 px-4 sm:px-6">
+
+    <!-- 主容器 -->
+    <div class="max-w-3xl mx-auto w-full space-y-8">
+        
+        <!-- 頂部自我介紹區 -->
+        <header class="text-center space-y-3 bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-sm border border-emerald-100">
+            <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full mb-1">
+                Dr. Edamame Medical Applets
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">
+                毛豆小醫師的診間小工具箱
+            </h1>
+            <p class="text-slate-600 max-w-lg mx-auto text-sm sm:text-base leading-relaxed">
+                A primary care physician using vibe coding to build practical medical applets. 結合臨床直覺與輕量開發，打造實用的診間效率小工具。
+            </p>
+        </header>
+
+        <!-- 工具清單區塊 -->
+        <main class="grid gap-4 sm:grid-cols-2">
+
+            <!-- 卡片 1：S2S Generator -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">SOAP / EMR</span>
+                        <span class="text-xs text-slate-400">Web App</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-800 mb-2">S2S Generator</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        透過直覺的 checklist 勾選介面，快速將病患症狀轉化為標準化的 Subjective 文字，擺脫手動修改正負號與天數的繁瑣。
+                    </p>
+                </div>
+                <a href="https://dredamame.github.io/s2sg/" target="_blank" class="inline-flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium py-2.5 px-4 rounded-xl transition-colors">
+                    立即使用 
+                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- 卡片 2：Lipid GO (LipiRisC) -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-medium text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">Cardiology / Risk</span>
+                        <span class="text-xs text-slate-400">Web App</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-800 mb-2">Lipid GO</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        基於心血管風險指引的網頁版臨床評估工具，協助在診間快速進行血脂風險對照與決策支援。
+                    </p>
+                </div>
+                <!-- 註：網址請依實際部署路徑調整 -->
+                <a href="#" target="_blank" class="inline-flex items-center justify-center w-full bg-slate-800 hover:bg-slate-900 text-white text-sm font-medium py-2.5 px-4 rounded-xl transition-colors">
+                    立即使用 
+                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+        </main>
+
+        <!-- 頁尾資訊區 -->
+        <footer class="text-center pt-4 border-t border-slate-200/60 text-xs text-slate-500 space-y-2">
+            <p>© 2026 Dr. Edamame. All rights reserved.</p>
+            <p>
+                <a href="https://www.facebook.com" target="_blank" class="hover:text-emerald-600 underline">Facebook 粉絲專頁</a> 
+                · 
+                <a href="https://github.com/dredamame" target="_blank" class="hover:text-emerald-600 underline">GitHub Repositories</a>
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
