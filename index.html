@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Version: v1.2.0 | Last Updated: 2026-11-14 (Added PODA Applet) -->
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -60,7 +61,7 @@
         <!-- 工具清單區塊 -->
         <main class="grid gap-4 sm:grid-cols-2">
 
-            <!-- 卡片 1：LipiRisC (第一個作品) -->
+            <!-- 卡片 1：LipiRisC -->
             <div class="bg-slate-800/80 hover:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700/80 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
@@ -78,7 +79,7 @@
                 </a>
             </div>
 
-            <!-- 卡片 2：S2S Generator (第二個作品) -->
+            <!-- 卡片 2：S2S Generator -->
             <div class="bg-slate-800/80 hover:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700/80 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
@@ -96,11 +97,32 @@
                 </a>
             </div>
 
+            <!-- 卡片 3：PODA -->
+            <div class="bg-slate-800/80 hover:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700/80 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-medium text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-900/50">Dermatology / CDSS</span>
+                        <span class="text-xs text-slate-500">Web App</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-100 mb-2">PODA</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        問題導向的皮膚病灶評估工具，協助非皮膚專科的臨床醫師在診間快速收窄鑑別診斷範圍並產出結構化病歷。
+                    </p>
+                </div>
+                <a href="https://poda168.ai.studio/" target="_blank" class="inline-flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-semibold text-sm py-2.5 px-4 rounded-xl transition-colors shadow-sm">
+                    立即使用 
+                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
         </main>
 
-        <!-- 頁尾資訊區 -->
-        <footer class="text-center pt-4 border-t border-slate-800 text-xs text-slate-500">
+        <!-- 頁尾資訊區（含版本標記） -->
+        <footer class="text-center pt-4 border-t border-slate-800 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p>© 2026 Dr. Edamame. All rights reserved.</p>
+            <span class="inline-block bg-slate-800/90 text-slate-400 border border-slate-700/80 px-2.5 py-0.5 rounded-md font-mono text-[11px]">
+                v1.2.0
+            </span>
         </footer>
 
     </div>
